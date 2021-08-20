@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import TodayCard from './components/TodayCard';
+import OtherDays from './components/OtherDays';
 
-function App() {
+export default function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page-content page-container" id="page-content">
+      <div className="padding">
+        <div className="row justify-content-center">
+          <div className="col-lg-12 stretch-card">
+
+            <div className="card card-weather">
+
+              <TodayCard />
+              <OtherDays />
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
     </div>
   );
 }
-
-export default App;

@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+.stretch-card > .card {
+  width: 100%;
+  min-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.grid-margin,
+.purchace-popup > div {
+  margin-bottom: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  border: 0;
+  border-radius: 2px;
+}
+
+.card-weather {
+  background: #e1ecff;
+  background-image: linear-gradient(
+    to left bottom,
+    #d6eef6,
+    #dff0fa,
+    #e7f3fc,
+    #eff6fe,
+    #f6f9ff
+  );
+}
+
+.card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
 
-.App-link {
-  color: #61dafb;
+.card-weather .card-body:first-child {
+  background: linear-gradient(180deg, #EBFBF6, #48967D);
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card .card-body {
+  padding: 1.88rem 1.81rem;
 }
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+
+.h3,
+h3 {
+  font-size: 1.56rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.text-gray,
+.card-subtitle,
+.new-accounts ul.chats li.chat-persons a p.joined-date {
+  color: #969696;
+}
+
+p {
+  font-size: 15px;
+  color: rgb(54, 52, 52);
+}
+
+.text-gray,
+.card-subtitle,
+.new-accounts ul.chats li.chat-persons a p.joined-date {
+  color: #969696;
+}
+
+.card-weather .weather-data {
+  padding: 0 0 2rem;
+}
+
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+
+.display-3 {
+  font-size: 2.5rem;
+}
+
+.card-weather .card-body {
+  background: #ffffff;
+}
+
+.day-card {
+  height: 300px;
+  overflow-y: scroll; /* Add the ability to scroll */
+  cursor: all-scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.day-card::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.day-card {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.mb-0,
+.my-0 {
+  margin-bottom: 0 !important;
+}
+
